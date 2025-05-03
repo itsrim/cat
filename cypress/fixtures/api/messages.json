@@ -1,0 +1,56 @@
+[
+  {
+    "id": "5",
+    "idConversation": "11",
+    "owner": "user",
+    "message": "test",
+    "createdAt": "2025-04-18T10:57:13.494Z",
+    "documentContent": null,
+    "idDocument": null
+  },
+  {
+    "id": "6",
+    "idConversation": "11",
+    "owner": "assistant",
+    "message": "Success. Claude is disabled on this environment.",
+    "createdAt": "2025-04-18T10:57:13.494Z",
+    "documentContent": null,
+    "idDocument": null
+  },
+  {
+    "id": "7",
+    "idConversation": "11",
+    "owner": "user",
+    "message": "test",
+    "createdAt": "2025-04-18T10:57:13.507Z",
+    "documentContent": null,
+    "idDocument": null
+  },
+  {
+    "id": "8",
+    "idConversation": "11",
+    "owner": "assistant",
+    "message": "Success. Claude is disabled on this environment.",
+    "createdAt": "2025-04-18T10:57:13.507Z",
+    "documentContent": null,
+    "idDocument": null
+  },
+  {
+    "id": "9",
+    "idConversation": "11",
+    "owner": "user",
+    "message": "test",
+    "createdAt": "2025-04-18T10:57:13.685Z",
+    "documentContent": null,
+    "idDocument": null
+  },
+  {
+    "id": "10",
+    "idConversation": "11",
+    "owner": "assistant",
+    "message": "Success. Claude is disabled on this environment.",
+    "createdAt": "2025-04-18T10:57:13.685Z",
+    "documentContent": null,
+    "idDocument": null
+  }
+]

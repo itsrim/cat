@@ -1,0 +1,72 @@
+{
+  "name": "chatbotai",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "concurrently \"vite build --watch\" \"vite preview --port 5173 --strictPort\"",
+    "build": "yarn lint && vite build --mode production",
+    "build-dev": "yarn lint && vite build --mode development",
+    "lint": "eslint ./",
+    "preview": "vite preview",
+    "cy:run": "cypress run --config-file cypress/cypress.config.js",
+    "cypress": "cypress open --config-file cypress/cypress.config.js --e2e --browser chrome",
+    "cy:ct:open": "cypress open --component --browser chrome",
+    "cy:ct:run": "cypress run --component --browser chrome",
+    "cy:ct:run:debug": "cypress run --component --browser chrome --headed --no-exit",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "lint-staged": "lint-staged"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.0.2",
+    "@mui/material": "^7.0.2",
+    "@originjs/vite-plugin-federation": "^1.4.1",
+    "@types/axios": "^0.14.4",
+    "@types/jest": "^29.5.14",
+    "axios": "^1.8.4",
+    "csstype": "^3.0.10",
+    "i18next": "^24.2.3",
+    "i18next-browser-languagedetector": "^8.0.4",
+    "localforage": "^1.10.0",
+    "notistack": "^3.0.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-i18next": "^15.4.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@testing-library/cypress": "^10.0.3",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/i18next": "^13.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "cypress": "^14.3.2",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.6",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "jsdom": "^26.1.0",
+    "lint-staged": "^15.5.1",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.6",
+    "vitest": "^3.1.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint ./src"
+    ]
+  }
+}
