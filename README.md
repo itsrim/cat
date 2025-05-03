@@ -1,15 +1,22 @@
 # chatbot
 chat demo
 
+![Alt text](./chatbot.gif)
 
 
 ## React + TypeScript + Vite
 
 ### to run project
+
+clone and install for run
 ```
 yarn install
 yarn start
+```
 
+cypress test component
+
+```
 yarn run cy:ct:open
 yarn run cy:ct:run
 ```
